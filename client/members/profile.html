@@ -1,0 +1,91 @@
+<template name='profile'>
+  <div class="ui scrollable grid">
+    <div class="row">
+      <div class="eight wide column with navbar">
+        {{> navbar }}
+        <div class="ui scrollable basic form segment">
+          <div class="two fields">
+            <div class="field">
+              <label>First Name</label>
+              <div class="ui left input">
+                <input type="text" id="firstName" placeholder="First Name" value="{{firstName}}"/>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Last Name</label>
+              <div class="ui left input">
+                <input type="text" id="lastName" placeholder="Last Name" value="{{lastName}}"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Email</label>
+            <div class="ui left labeled icon input">
+              <input type="email" id="email" placeholder="Email" value="{{email}}"/>
+              <i class="mail icon"></i>
+            </div>
+          </div>
+
+          <div class="ui divider"></div>
+
+          <div class="field">
+            <label>Organization</label>
+            <div class="ui left labeled icon input">
+              <input type="text" id="organization" placeholder="Organization (optional)" value="{{organization}}"/>
+              <i class="building icon"></i>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Location</label>
+            <div class="ui left labeled icon input">
+              <input class="form-control" type="text" id="location" placeholder="Location (optional)" value="{{location}}"/>
+              <i class="map marker icon"></i>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Bio</label>
+            <div class="ui left input">
+              <textarea class="form-control" type="text" id="bio" placeholder="Bio (optional)">{{bio}}</textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Website</label>
+            <div class="ui left labeled icon input">
+              <input class="form-control" type="text" id="url" placeholder="URL (optional)" value="{{url}}"/>
+              <i class="bookmark icon"></i>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Google Plus</label>
+            <div class="ui left labeled icon input">
+              <input class="form-control" type="text" id="googlePlusUrl" placeholder="Google Plus URL (optional)" value="{{googlePlusUrl}}"/>
+              <i class="google plus icon"></i>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Twitter</label>
+            <div class="ui left labeled icon input">
+              <input class="form-control" type="text" id="twitterHandle" placeholder="Twitter Handle (optional)" value="{{twitterHandle}}"/>
+              <i class="twitter icon"></i>
+            </div>
+          </div>
+
+          <a class='ui labeled icon button'><i class='ok sign icon'></i> done</a>
+        </div>
+      </div>
+
+      <div class="eight wide computer and tablet only column">
+        <div id="member-cards" class="ui one scrollable items">
+          {{> memberCard this }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

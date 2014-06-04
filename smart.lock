@@ -1,0 +1,66 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "semantic-ui": {},
+      "iron-router": {},
+      "fastclick": {},
+      "livestamp": {},
+      "moment": {},
+      "profile": {},
+      "gravatar": {}
+    },
+    "packages": {
+      "semantic-ui": {
+        "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
+        "tag": "v0.17.0",
+        "commit": "820b4a05267733aa8124ba6ebc5b88eaf93361c4"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
+      },
+      "fastclick": {
+        "git": "https://github.com/percolatestudio/meteor-fastclick",
+        "tag": "v0.6.7",
+        "commit": "fcb3bfd34d9f6874e626b4e24e8f54107938db41"
+      },
+      "livestamp": {
+        "git": "https://github.com/colllin/meteor-livestamp.git",
+        "tag": "v1.1.2-3",
+        "commit": "d161b9de53d7032511ecaa13486b6b5cb11f71f3"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+      },
+      "profile": {
+        "git": "https://github.com/Differential/meteor-profile.git",
+        "tag": "v0.0.10",
+        "commit": "2540cdc76cf5c5fdf6ee0fd0cff1e37c4b1ba519"
+      },
+      "gravatar": {
+        "git": "https://github.com/tmeasday/meteor-gravatar.git",
+        "tag": "v0.0.4",
+        "commit": "d1052ff4401725c23fb199c0e0a36e29b926bc22"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "crypto-md5": {
+        "git": "https://github.com/oortcloud/meteor-crypto-md5.git",
+        "tag": "v3.1.2.2",
+        "commit": "75bbb3eeace302122d3554a6212a6fe92553fa18"
+      },
+      "crypto-base": {
+        "git": "https://github.com/oortcloud/meteor-crypto-base.git",
+        "tag": "v3.1.2.1",
+        "commit": "5df8d82a0595553415bbfae2930c6ecbeece5794"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<template name='memberCard'>
+  <div class='ui member-card item'>
+    <div class="image">
+      <img src="{{ avatar }}">
+      <a class="like ui corner label">
+        <i class="like icon"></i>
+      </a>
+    </div>
+    <div class="content">
+      <div class="name">{{ name }}</div>
+      <p class="subhead">{{ subhead }}</p>
+      <p class="description">{{bio}}</p>
+      <div class="ui links list">
+        {{#if url}}
+          <a class="item" href='{{url}}'>
+            <i class="external url icon"></i>
+            {{url}}
+          </a>
+        {{/if}}
+        {{#if googlePlusUrl}}
+          <a class="item" twitterhref='{{googlePlusUrl}}'>
+            <i class="google plus icon"></i>
+            {{googlePlusUrl}}
+          </a>
+        {{/if}}
+        {{#if twitterHandle}}
+          <a class="item" href='http://twitter.com/{{twitterHandle}}'>
+            <i class="twitter icon"></i>
+            @{{twitterHandle}}
+          </a>
+        {{/if}}
+      </div>
+      <div class="extra">
+          199 votes
+      </div>
+    </div>
+  </div>
+</template>

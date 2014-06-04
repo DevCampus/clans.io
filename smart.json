@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "semantic-ui": {},
+    "iron-router": {},
+    "fastclick": {},
+    "livestamp": {},
+    "moment": {},
+    "profile": {},
+    "gravatar": {}
+  }
+}

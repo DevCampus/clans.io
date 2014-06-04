@@ -1,0 +1,19 @@
+<template name="item">
+  <nav class="ui square navbar menu">
+    <a href="{{pathFor 'feed'}}" class="mobile only item">
+      <i class="arrow left icon"></i>
+      Back
+    </a>
+    <div class="right menu">
+      <div class="item">
+      </div>
+    </div>
+  </nav>
+  {{ item.summary }}
+</template>
+
+
+<template name="empty">
+  <h1>Empty</h1>
+</template>
+

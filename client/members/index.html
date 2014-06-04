@@ -1,0 +1,33 @@
+<template name="members">
+  <div class="ui scrollable app grid">
+    <div class="row">
+      <div class="five wide column with navbar">
+        {{> navbar }}
+        <div class="ui scrollable relaxed celled list">
+          {{#each members }}
+            <a class="item" href="{{pathFor 'showMember'}}">
+              <img class="ui avatar image" src="{{ avatar }}"/>
+              <div class="content">
+                <div class="header">{{ fullName }}</div>
+                <div class="description">{{ subhead }}</div>
+              </div>
+            </a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="eleven wide tablet and computer only column with navbar">
+        <nav class="ui square navbar menu">
+          <a href="{{pathFor 'members'}}" class="mobile only item">
+            <i class="arrow left icon"></i>
+            Back
+          </a>
+          <div class="right menu">
+          </div>
+        </nav>
+        <div id="member-cards" class="ui one scrollable items">
+          {{> memberCard member}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

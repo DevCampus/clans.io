@@ -1,0 +1,25 @@
+<template name="feedLayout">
+<div class="{{ class }} content container">
+    <div class="ui scrollable app grid">
+      <div class="row">
+        <div class="five wide column with navbar">
+          {{> navbar }}
+          <div class="ui scrollable relaxed celled list">
+            {{#each items }}
+              <a class=" item" href="{{pathFor 'showItem'}}">
+                <i class="circular photo icon"></i>
+                <div class="content">
+                  <div class="header">{{ summary }}</div>
+                  <div class="description">{{ text }}</div>
+                </div>
+              </a>
+            {{/each}}
+          </div>
+        </div>
+        <div class="eleven wide tablet and computer only column with navbar">
+          {{> yield }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,211 @@
+/* Show the "Drag" background in the demo */
+a {
+  text-decoration: none;
+  color: #009FDA;
+}
+
+a:hover {
+  color: #00BAFF;
+}
+
+.content-wrapper {
+  overflow: hidden;
+  transition: left 0.5s ease;
+  left: 54px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Chrome and Safari */
+  -moz-backface-visibility: hidden; /* Firefox */
+  -ms-backface-visibility: hidden; /* Internet Explorer 10+ */
+}
+
+.scrollable {
+  min-height: 0;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition-property: top, bottom;
+  transition-property: top, bottom;
+  -webkit-transition-duration: .2s, .2s;
+  transition-duration: .2s, .2s;
+  -webkit-transition-timing-function: linear, linear;
+  transition-timing-function: linear, linear;
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+.content.container {
+  background: #fff;
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.ui.menu.square {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -box-shadow: none;
+  border: 1px solid rgba(0, 0,0, 0.08);
+  border-width: 0 1px 1px 0;
+}
+
+.ui.basic.form.segment {
+  padding-bottom: 1em;
+}
+
+#login-buttons a {
+  text-decoration: none;
+}
+
+/* App Grid */
+.ui.app.grid {
+  margin: 0;
+}
+
+.ui.app.grid > .column,
+.ui.app.grid > .row > .column {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Member Cards */
+#member-cards {
+  margin: 0;
+  padding: 4%;
+  height: 100%;
+  width: 100%;
+}
+
+#member-cards .member-card {
+  font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  max-width: 400px;
+}
+
+#member-cards.one.items .member-card {
+  float: none;
+  margin: 0em auto 2.5em;
+}
+
+#member-cards .member-card .links {
+  margin-bottom: 0;
+}
+
+.ui.items > .item > .content > .subhead {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .85em;
+  margin: 0 0 1em 0;
+}
+
+/* Default demo styles */
+.snap-content {
+  background: #BFC7D8;
+}
+
+.snap-drawers {
+  background: #333;
+  background-image: url("/images/noisy-texture.png");
+}
+
+.snap-drawer-left {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 6px;
+}
+
+.snap-drawer .ui.vertical.text.menu .item > .icon {
+  margin-right: 0.25em;
+}
+
+/* With Navbar */
+.ui.grid > .column.with.navbar,
+.ui.grid > .row > .column.with.navbar {
+  transition: width 0.5s ease;
+  margin-top: 0;
+  padding-top: 43px;
+}
+
+.ui.grid > .column.with.navbar > .navbar,
+.ui.grid > .row > .column.with.navbar > .navbar {
+  margin: -43px 0 0 0;
+}
+
+.ui.grid > .column.with.navbar > .navbar .item:before ,
+.ui.grid > .row > .column.with.navbar > .navbar .item:before {
+  background-image: none;
+}
+
+.ui.grid > .column.with.navbar .scrollable.list,
+.ui.grid > .column.with.navbar .scrollable.segment,
+.ui.grid > .row > .column.with.navbar .scrollable.list,
+.ui.grid > .row > .column.with.navbar .scrollable.segment {
+  margin: 0;
+  height: 100%;
+  /* box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1); */
+  border: 1px solid rgba(0, 0,0, 0.08);
+  border-width: 0 1px 0 0;
+  background: #fafafa;
+}
+
+.ui.grid > .column.with.navbar .celled.list > .item,
+.ui.grid > .row > .column.with.navbar .celled.list > .item {
+  padding: 1em 0.5em;
+}
+
+.ui.grid > .column.with.navbar .celled.list > .item:first-child,
+.ui.grid > .row > .column.with.navbar .celled.list > .item:first-child {
+  border-top: none;
+}
+
+.ui.grid > .column.with.navbar .celled.list > .item .content,
+.ui.grid > .row > .column.with.navbar .celled.list > .item .content {
+  font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: rgb(119, 119, 119);
+}
+
+.ui.grid > .column.with.navbar .celled.list > .item .content .header,
+.ui.grid > .row > .column.with.navbar .celled.list > .item .content .header {
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(119, 119, 119);
+}
+
+.ui.scrollable.grid,
+.ui.scrollable.grid .row,
+.ui.scrollable.grid .column {
+  height: 100%;
+}
+
+
+
+/* Mobile */
+.mobile .content-wrapper {
+  left: 0px;
+}
+
+.mobile .content.container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.mobile .content.container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.mobile .ui.scrollable.grid > .column.with.navbar,
+.mobile .ui.scrollable.grid > .row > .column.with.navbar {
+  width: 100% !important;
+}
+

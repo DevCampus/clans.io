@@ -1,0 +1,23 @@
+<template name="drawer">
+  <div class="drawer snap-drawers">
+    <div class="snap-drawer snap-drawer-left">
+      <div class="ui inverted fluid vertical text menu">
+        <a id="search-icon" class="item">
+          <i class="big search icon"></i>
+          <div class="ui input">
+            <input type="text" placeholder="Search...">
+          </div>
+        </a>
+        <a href="{{pathFor 'dashboard'}}" class="item">
+          <i class="big dashboard icon"></i> Dashboard
+        </a>
+        <a href="{{pathFor 'members'}}" class="item">
+          <i class="big book icon"></i> Member Directory
+        </a>
+        <a href="{{pathFor 'profile'}}" class="item">
+          <i class="big user icon"></i> Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
