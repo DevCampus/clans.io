@@ -1,0 +1,60 @@
+<head>
+  <title>clansio</title>
+</head>
+
+<body>
+  {{> layout}}
+</body>
+
+<template name="layout">
+  <div class="ui page grid">
+    <div class="one column row">
+      <div class="column">
+        <nav class="ui inverted menu">
+          <a class="item">
+            <i class="home icon"></i>
+            Clans.io
+          </a>
+          <div class="menu right">
+            <div class="item">
+              {{ loginButtons align='right' }}
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six wide column">
+        {{> addBulletin }}
+      </div>
+      <div class="ten wide column">
+        {{> bulletins }}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="addBulletin">
+  <form class="ui form segment">
+    <div class="field">
+      <input type="text" name="bulletin" placeholder="Compose Bulletin"/>
+    </div>
+    <input class="ui fluid submit button" type="submit" value="Post Bulletin"/>
+  </form>
+</template>
+
+<template name="bulletins">
+  <div class="ui piled feed segment">
+    {{#each bulletins}}
+      <div class="event">
+        <div class="label">
+          <i class="circular pencil icon"></i>
+        </div>
+        <div class="content">
+          <div class="summary">{{ email }}</div>
+          <div class="extra text">{{ body }}</div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>

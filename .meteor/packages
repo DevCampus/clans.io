@@ -15,3 +15,5 @@ livestamp
 coffeescript
 appcache
 gravatar
+autopublish
+preserve-inputs
